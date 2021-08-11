@@ -1,0 +1,128 @@
+/* css reset */
+/* to remove default margin */
+
+* {
+	margin: 0;
+	/* to create space */
+	padding: 0;
+	/* changes amount of space between the border and the content*/
+	/* used to position the contents of the element */
+	box-sizing: border-box;
+	/*box sizing property defines how the width and height
+	of an element are calculated. this allows us to control the
+	measurements of the elements better
+	the Value "border-box" includes the padding and the border
+	properties of an element to the total height and width in
+	it's computation
+	this can be translated to the "total width/height of an
+	element is (num) which includes the padding and the border"
+	as opposed to its initial context of "the total width/height
+	of an element is (num) PLUS the padding and the border" */
+}
+/* coding starts here */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	/*short hand properties follows DRY principle*/
+	padding: 0.8rem;
+
+	/* padding-right: 20px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 40px; */
+
+	margin-bottom: 2rem;
+	border-bottom: 1px solid gray;
+	list-style-type: none;
+}
+
+nav .nav, nav .nav-logo {
+	display: inline;
+	/*inline changes the <li> elements to inline elements.
+	by default it is a block element. this makes item apear
+	beside one another. */
+	margin: 0.5rem;
+}
+
+#intro {
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	/* margin vs padding */
+	/* margin is best used when creating space between elements */
+	/* padding is best used when creating space between an
+	element's border and it's content */	
+}
+
+.header {
+	text-align: center;
+}
+
+#intro h2, #intro p {
+	margin-bottom: 1rem;
+}
+
+#intro button {
+	padding: 1rem;
+	color: white;
+	background-color: #c2195b;
+	border-radius: 25px;
+	font-weight: bold;
+}
+
+#succeed-info {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+#succeed-info h2 {
+	margin-bottom: 1rem;
+}
+
+#succeed-info h3 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#succeed-info .card {
+	/* ginagamit para mag tabi tabi yung tatlong div*/
+	display: inline-block;
+	/*para mag align elements sila lahat */
+	vertical-align: top;
+	/* width property uses the "%" value which divides the whole width of the container into 3 parts because we are horizontally
+	aligning 3 components */
+	width: 30%;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem; 
+	min-height: 175px;
+}
+
+/*pre footer*/
+#pre-footer {
+	color: white;
+	background-color: #002540;
+}
+
+#pre-footer > div {
+	display: inline-block;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 6rem; 
+}
+
+footer {
+	padding: 0.7rem;
+	text-align: center;
+}
+
+footer span {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
