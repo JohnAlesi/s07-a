@@ -111,10 +111,10 @@ nav .nav, nav .nav-logo {
 
 #pre-footer > div {
 	display: inline-block;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	padding-left: 1rem;
-	padding-right: 6rem; 
+	vertical-align: top;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+	padding: 4.5rem; 
 }
 
 footer {
